@@ -73,7 +73,7 @@ a{
 	text-align: center;
 	padding: 60px 6%;
     background:
-        linear-gradient(rgba(0, 0, 0, 0.50)),rgba(0, 0, 0, 0.50) url("Images/Resturant/hero.avif");
+        linear-gradient(rgba(0, 0, 0, 0.50)),rgba(0, 0, 0, 0.50) url("hero.avif");
 	background-size: cover;
 	background-position: center;
 }
