@@ -360,6 +360,10 @@ section{
 @media (max-width: 600px) {
 
     .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
         padding: 15px 5%;
     }
 
@@ -368,11 +372,15 @@ section{
     }
 
     .navbar {
-        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
     }
 
     .navbar a {
-        font-size: 13px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     .hero {
@@ -381,41 +389,40 @@ section{
     }
 
     .hero h2 {
-        font-size: 38px;
+        font-size: 32px; /* Slightly reduced so words like "Moments" don't clip */
+        word-break: break-word;
     }
 
     .hero-content > p:not(.hero-subtitle) {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     .btn {
-        width: 200px;
+        width: 100%;
+        max-width: 250px;
         text-align: center;
     }
 
     section {
-        padding: 60px 5%;
+        padding: 40px 5%;
     }
 
     .section-heading h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .features,
-    .product-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .product-grid,
     .footer-content {
         grid-template-columns: 1fr;
     }
 }
-
 
 
 
